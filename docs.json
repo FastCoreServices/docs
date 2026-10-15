@@ -44,8 +44,12 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:soporte@fastcore.es"
+        "href": "https://www.fastcore.es/contacto",
+        "label": "Soporte"
+      },
+      {
+        "href": "https://www.fastcore.es/",
+        "label": "FastCore"
       }
     ],
     "primary": {
