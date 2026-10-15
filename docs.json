@@ -68,6 +68,7 @@
     }
   },
   "background": {
-    "decoration": "grid"
+    "decoration": "grid",
+    "image": "/images/portada_fastcore_chatbots.jpg"
   }
 }
