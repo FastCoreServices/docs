@@ -1,0 +1,25 @@
+---
+title: "Agregar sistema"
+---
+
+## **Añadir el sistema en hub existente**
+
+En [**http://192.168.1.121:8090**](http://192.168.1.121:8090) → Agregar Sistema:
+
+| **Campo** | **Valor** |
+| :-- | :-- |
+| Nombre | `LudoSAFE Staging` (o el que quieras) |
+| **Servidor / IP** | `46.224.49.168` (IP pública del VPS) |
+| Puerto | `45876` |
+
+Luego pulsa **Copiar docker compose** (mejor que inventar el YAML a mano).
+
+## **3. Solo el agente en el VPS**
+
+`sudo mkdir -p /opt/beszel-agent`<br />`sudo chown fastcore:fastcore /opt/beszel-agent`<br />`cd /opt/beszel-agent`<br />`nano docker-compose.yml   # pega lo que copió el panel`<br />`docker compose up -d`<br />`docker compose ps`
+
+Tiene que salir solo `beszel-agent`, **sin** servicio `beszel` ni puerto `8090`.
+
+En el panel, **Agregar Sistema**. Si no pasa a online, el hub en casa tiene que poder llegar al VPS al **45876** (regla en Hetzner / firewall hacia tu IP de casa, o VPN tipo Tailscale). El hub local no se expone; el VPS tampoco necesita el `8090`.
+
+<br />
