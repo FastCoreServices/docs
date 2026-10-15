@@ -16,7 +16,14 @@ Luego pulsa **Copiar docker compose** (mejor que inventar el YAML a mano).
 
 ## **3. Solo el agente en el VPS**
 
-`sudo mkdir -p /opt/beszel-agent`<br />`sudo chown fastcore:fastcore /opt/beszel-agent`<br />`cd /opt/beszel-agent`<br />`nano docker-compose.yml   # pega lo que copió el panel`<br />`docker compose up -d`<br />`docker compose ps`
+```text
+sudo mkdir -p /opt/beszel-agent
+sudo chown fastcore:fastcore /opt/beszel-agent
+cd /opt/beszel-agent
+nano docker-compose.yml   # pega lo que copió el panel
+docker compose up -d
+docker compose ps
+```
 
 Tiene que salir solo `beszel-agent`, **sin** servicio `beszel` ni puerto `8090`.
 
