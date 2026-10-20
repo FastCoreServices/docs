@@ -30,12 +30,8 @@
   "navbar": {
     "links": [
       {
-        "href": "https://www.fastcore.es/contacto",
-        "label": "Soporte"
-      },
-      {
-        "href": "https://www.fastcore.es/",
-        "label": "FastCore"
+        "href": "https://app.mintlify.com/fastcore/fastcore/editor",
+        "label": "Editor"
       }
     ],
     "primary": {
